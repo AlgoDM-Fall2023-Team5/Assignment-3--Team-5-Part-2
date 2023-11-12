@@ -99,6 +99,7 @@ if uploaded_image is not None:
         name = uploaded_image.name
         st.write(name)
         search_by_style(image_style_embeddings, images, name)
+        
         #plt.savefig('search_by_style.png')
         st.header("Matching Images:")
         st.image('search_by_style.png')
