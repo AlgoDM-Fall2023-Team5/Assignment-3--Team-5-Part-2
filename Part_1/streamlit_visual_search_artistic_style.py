@@ -97,6 +97,7 @@ if uploaded_image is not None:
         st.sidebar.write(":blue[Uploaded Image:]")
         st.sidebar.image(uploaded_image, width=300)
         name = uploaded_image.name
+        st.write(name)
         search_by_style(image_style_embeddings, images, uploaded_image)
         #plt.savefig('search_by_style.png')
         st.header("Matching Images:")
