@@ -16,7 +16,7 @@ st.header("Visual Search Aristic Style")
 # D:\Projects\ADM Assg 3\Assignment-3--Team-5\Part_1\streamlit_visual_search_artistic_style.py
 #model = tf.keras.models.load_model("Part_1/visual_search_artistic.keras")
 
-with open('Part_1/image_style_embeddings.pickle', 'rb') as f:
+with open('C:/Users/shiri/Documents/assg3Clone/Assignment-3--Team-5-Part-2/Part_1/image_style_embeddings.pickle', 'rb') as f:
     image_style_embeddings = pickle.load(f)
 
 def load_image(image):
@@ -92,27 +92,26 @@ uploaded_image = st.file_uploader("Upload an Image", type=['jpg', 'png', 'jpeg']
 # st.write(uploaded_image)
 
 if uploaded_image is not None:
-    try:
-        st.write(":green[Image Uploaded Successfully]")
-        st.sidebar.write(":blue[Uploaded Image:]")
-        st.sidebar.image(uploaded_image, width=300)
-        name = uploaded_image.name
-        st.write(name)
-        search_by_style(image_style_embeddings, images, name)
-        
-        #plt.savefig('search_by_style.png')
-        st.header("Matching Images:")
-        st.image('search_by_style.png')
+    st.write(":green[Image Uploaded Successfully]")
+    st.sidebar.write(":blue[Uploaded Image:]")
+    st.sidebar.image(uploaded_image, width=300)
+    name = uploaded_image.name
+    st.write(name)
+    search_by_style(image_style_embeddings, images, name)
+    
+    #plt.savefig('search_by_style.png')
+    st.header("Matching Images:")
+    st.image('search_by_style.png')
 
-        embedding_plot(X_tsne, images=list(images.values()))
+    embedding_plot(X_tsne, images=list(images.values()))
 
-        # Save the figure as an image
-        
-        #plt.savefig('embedding_plot.png')
+    # Save the figure as an image
+    
+    #plt.savefig('embedding_plot.png')
 
-        # Pass the saved image to the st.image() function
-        st.header("2D Embedding Plot:")
-        st.image('embedding_plot.png')
+    # Pass the saved image to the st.image() function
+    st.header("2D Embedding Plot:")
+    st.image('embedding_plot.png')
 
-    except Exception as e:
-      st.error(f'Failed to load or process the image: {str(e)}')
+
+    st.error(f'Failed to load or process the image: {str(e)}')
