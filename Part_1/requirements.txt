@@ -9,3 +9,4 @@ tensorflow==2.14.0
 tensorflow_probability==0.22.1
 tqdm==4.66.1
 opencv-python-headless==4.5.4.60
+git+https://github.com/openai/CLIP.git
