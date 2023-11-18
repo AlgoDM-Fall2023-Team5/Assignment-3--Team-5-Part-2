@@ -53,5 +53,5 @@ if st.sidebar.button("Search"):
     st.text(search_query)
     columns = st.columns(n_results_per_query)
     for j, image_id in enumerate(result_image_ids):
-        image = Image.open(f'clothing-dataset-master/{image_id}.jpg')
+        image = Image.open(f'clothing-dataset-master/images/{image_id}.jpg')
         columns[j].image(image, caption=f"Image {j+1}")
