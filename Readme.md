@@ -1,11 +1,7 @@
 # Assignment README 🚀
 
 ## Quick Links:🔎
-1. [Codelabs](https://codelabs-preview.appspot.com/?file_id=1wqKhtmHWH24mrivcSj_VH1B2udrAi4xTzndSzxf_gQ8#0)🔗
-2. [Contribution Report:](https://github.com/AlgoDM-Fall2023-Team5/Assignment-3--Team-5/blob/Main/Part_1/Contribution%20Report.pdf)🔗
-3. [Video Recording:](https://drive.google.com/file/d/1P2bkptw5dGbjWwEd57DpwD3YkX3_cp9v/view?usp=sharing)🔗
-
-
+1. [Codelabs](https://codelabs-preview.appspot.com/?file_id=1jzEAozrSR_Eq6OkHWqg8q86x8FLNeKQOo54mn6V42FE#0)🔗
 
 ### Streamlit App 🌟
 
@@ -14,7 +10,7 @@
 
 
   ```bash
-   git clone https://github.com/AlgoDM-Fall2023-Team5/Assignment-3--Team-5.git
+   git clone https://github.com/AlgoDM-Fall2023-Team5/Assignment-3--Team-5-Part-2
    ```
    2. Change Directory 
 
@@ -34,9 +30,7 @@ pip install -r requirements.txt
    ```
    5. Run the app
 
-* Visual Search Artistic Style: [streamlit_visual_search_artistic_style.py]
-* Visual Search Similarity: [streamlit_visual_similarity_search.py]
-* Visual Search VAE :  [streamlit_vae.py]
+* Image-search-clip: [home.py]
    
 
    ```
@@ -44,7 +38,7 @@ pip install -r requirements.txt
 
    ```
 
-- 📊 Users can Upload the pictures and observe the visual search similarities
+- 📊 Users can Enter the text and observe the related images
 
 
 [AlgoDM-Team 5] 🧑‍💻
