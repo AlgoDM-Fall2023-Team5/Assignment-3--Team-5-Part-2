@@ -29,8 +29,7 @@ def search(search_query, image_features, image_ids, results_count=3):
     return find_best_matches(text_features, image_features, image_ids, results_count)
 
 # Load image features and image IDs
-features_path = "/workspaces/Assignment-3--Team-5-Part-2/Part_1/features" 
-image_ids_path = f"{features_path}/image_ids.csv"
+features_path = "Part_1/features" 
 image_ids = pd.read_csv(f"{features_path}/image_ids.csv")
 image_ids = list(image_ids['image_id'])
 image_features = np.load(f"{features_path}/features.npy")
